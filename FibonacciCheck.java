@@ -9,9 +9,10 @@ class FibonacciCheck
 	  int num = sc.nextInt();
 	  int n1=0,n2=1,n3;
 
-	  for(int i=0;i<num;i++)
+	  for(int i=0; ;i++)
 		{
 		  n3=n1+n2;
+		  System.out.println(n1);
 		  if(n1==num)
 			{
 			  System.out.println("Entered number is fibonacci number ");
