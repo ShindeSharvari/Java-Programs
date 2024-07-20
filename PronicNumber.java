@@ -5,11 +5,11 @@ is a number that is the product of two consecutive integers, i.e., a number of t
 
 In other words, a pronic number is a number that can be expressed as the product of two consecutive integers, such as:
 
-2 = 1 × 2
-6 = 2 × 3
-12 = 3 × 4
-20 = 4 × 5
-30 = 5 × 6
+2 = 1 Ã— 2
+6 = 2 Ã— 3
+12 = 3 Ã— 4
+20 = 4 Ã— 5
+30 = 5 Ã— 6
 ...
 The sequence of pronic numbers is: 2, 6, 12, 20, 30, 42, 56, 72, 90, ...
 
@@ -24,8 +24,8 @@ class PronicNumber
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number : ");
 		int num = sc.nextInt();
-        int i=0;
-        while(num>=i)
+                int i=0;
+                while(num>=i)
 		{
 		   if(i*(i+1)==num)
 		   {
@@ -39,7 +39,7 @@ class PronicNumber
 		}
 		 else
 		{
-           System.out.println(+num+" is not a pronic number");
+                        System.out.println(+num+" is not a pronic number");
 		}
 	}
 }
