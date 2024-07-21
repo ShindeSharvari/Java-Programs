@@ -18,26 +18,26 @@ class UniqueNumber
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number : ");
 		int num = sc.nextInt();
-        int temp1=num;
-        while(temp1>0)   
-		{
+                int temp1=num;
+                while(temp1>0)   
+		 {
 		   int rem=temp1%10;
 		   temp1/=10;
 		   int temp2=temp1,rem2=0;   // stored in temp2 so inner loop will work on temp2 and temp1 will be as it is for outer loop.
 		   while(temp2>0)
 			{
 			   rem2=temp2%10;
-		       if(rem2==rem)
-		       {
+		           if(rem2==rem)
+		             {
 			       break;
-		       } 
+		             } 
 			   temp2/=10;
-		    }
-			if(rem2==rem)
-		       {   
-				   System.out.println(num+" is not an unique number.");
-			       break;
-		       } 
+		        }  
+		   if(rem2==rem)
+		   {   
+		       System.out.println(num+" is not an unique number.");
+			break;
+		   } 
 		}
 		if(temp1==0)   //outer loop becomes zero , means conditon false.
 		{
