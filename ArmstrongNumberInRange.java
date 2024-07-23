@@ -3,16 +3,16 @@ class ArmstrongNumberInRange
 {
 	public static void main(String[] args) 
 	{
-        Scanner sc = new Scanner(System.in);
+                Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the first number:");
-		long start=sc.nextInt();
+		long start=sc.nextLong();
 
 		System.out.print("Enter the second number:");
-		long end=sc.nextInt();
+		long end=sc.nextLong();
 
 		while(start<=end)
 		{
-        long count=0;
+                long count=0;
 		for(long i=start ;i!=0;i/=10)
 		{
 			
@@ -29,7 +29,7 @@ class ArmstrongNumberInRange
 			}
 			sum=sum+pow;
 		}
-        if(start==sum)
+                if(start==sum)
 		{
 			System.out.println(start);
 		}
