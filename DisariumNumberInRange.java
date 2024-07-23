@@ -15,7 +15,7 @@ class DisariumNumberInRange
 		{
 
 		long count=0;
-		for(int i=start ;i>0;i/=10)
+		for(long i=start ;i>0;i/=10)
 		{
 			count++;
 		}
