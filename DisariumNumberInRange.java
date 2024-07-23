@@ -5,28 +5,28 @@ class DisariumNumberInRange
 	{
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the starting number : ");
-		int start=sc.nextInt();
+		long start=sc.nextLong();
 
 		System.out.print("Enter the eding number : ");
-		int end=sc.nextInt();
+	        long end=sc.nextLong();
 
 
 		while(start<=end)
 		{
 
-		int count=0;
+		long count=0;
 		for(int i=start ;i>0;i/=10)
 		{
 			count++;
 		}
-		int temp=start;
-		int sum=0;
+		long temp=start;
+		long sum=0;
 		while(temp>0)
 		{
-			int rem=temp%10;
-			int pow=1;
+			long rem=temp%10;
+			long pow=1;
 			
-			for(int j=0;j<count;j++)
+			for(long j=0;j<count;j++)
 			{
 				pow=pow*rem;
 			}
