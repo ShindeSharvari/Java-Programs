@@ -12,12 +12,12 @@ class TechNumberInRange
 		int end = sc.nextInt();
 
 
-        for(int num=start;num<=end;num++)
+                for(int num=start;num<=end;num++)
 		{
 		   int count=0;
 		   for(int i=num;i!=0;i/=10)
 		   {
-              count++;
+                     count++;
 		   }
 		   if(count%2==0)
 		   {
