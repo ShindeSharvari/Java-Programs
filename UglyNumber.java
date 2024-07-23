@@ -6,7 +6,7 @@ class UglyNumber
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number :");
 		int num=sc.nextInt();
-        int temp=num;
+                int temp=num;
 		while(temp>1)
 		{
 			if(temp%2==0)
@@ -28,11 +28,11 @@ class UglyNumber
 		}
 		if(temp==1)
 		{
-			System.out.println(num+" is an ugly number.");
+		    System.out.println(num+" is an ugly number.");
 		}
 		else
 		{
-            System.out.println(num+" is not an ugly number.");
+                     System.out.println(num+" is not an ugly number.");
 		}
 	}
 }
