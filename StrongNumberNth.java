@@ -8,11 +8,11 @@ class StrongNumberNth
 		System.out.print("Enter the position for stong number:");
 		int pos=sc.nextInt();
 
-        int count=0,num=1;
+                int count=0,num=1;
 		
-        while(true)          // We dont know so we give true when our condition becomes true
+                while(true)          // We dont know so we give true when our condition becomes true
 		{
-        int temp=num;       // assigned to temp so operations will be done on temp and num will be safe to compare.
+                int temp=num;       // assigned to temp so operations will be done on temp and num will be safe to compare.
 		int sum=0;
 		while(temp>0)
 		{
@@ -32,8 +32,8 @@ class StrongNumberNth
 		}
 		if(count==pos)               // check count == pos so to get nth number
 		{
-		    System.out.println(num);
-			break;
+		    System.out.println("The "+pos+" position strong number is: "+num);
+		    break;
 		}
 		num++;
 	   }
