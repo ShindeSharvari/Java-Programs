@@ -19,7 +19,7 @@ class Automorphic
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number:");
 		int num=sc.nextInt();
-        int temp=num;
+                int temp=num;
 		int count=0;
 		int square=num*num;
 
@@ -37,7 +37,7 @@ class Automorphic
 		int last=0;
 		while(rev>0)
 		{
-            int rem=rev%10;
+                        int rem=rev%10;
 			last=(last*10)+rem;     //This will reverse the number again 
 			rev=rev/10;
 		}
