@@ -19,7 +19,7 @@ class ArmstrongNumber
 {
 	public static void main(String[] args) 
 	{
-        Scanner sc = new Scanner(System.in);
+                Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the number:");
 		int num=sc.nextInt();
 		int temp=num,sum=0,count=0;
@@ -38,13 +38,13 @@ class ArmstrongNumber
 			}
 			sum=sum+pow;
 		}
-        if(temp==sum)
+                if(temp==sum)
 		{
-			System.out.println(+temp+" is armstrong number.");
+		     System.out.println(+temp+" is armstrong number.");
 		}
 		else
 		{
-            System.out.println(+temp+" is not armstrong number.");
+                     System.out.println(+temp+" is not armstrong number.");
 		}
 	}
 }
