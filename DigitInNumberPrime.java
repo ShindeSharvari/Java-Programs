@@ -9,22 +9,21 @@ class DigitInNumberPrime
 		System.out.print("Enter the number : ");  // Taking number from user.
 		int num = sc.nextInt();
        
-       for( int temp=num;temp>0;temp/=10)
+               for( int temp=num;temp>0;temp/=10)
 		{
 		   int divisor=2;
 		   int rem=temp%10;                     // Extracting number
 		   for(;divisor<=rem;divisor++)         // checking extracted number is prime or not.
+		    {
+			if(rem%divisor==0)
 			{
-			   if(rem%divisor==0)
-				{
-                   break;
-				}
+                           break;
 			}
+		    }
 			if(rem==divisor)                   
 			{
 				System.out.println(num+" contains a prime digit.");
 			} 
 		}
-
 	}
 }
