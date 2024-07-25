@@ -10,45 +10,44 @@ class ColorSuggestion
 	   switch(day.toLowerCase())
 		{
 		   case "monday":
-			   {
-			      System.out.println("White");
-			      break;
-			   }
-			case "tuesday":
-			   {
-			      System.out.println("Red");
-			      break;
-			   }
-			case "wednesday":
-			   {
-			      System.out.println("Green");
-			      break;
-			   }
-			case "thursday":
-			   {
-			      System.out.println("Yellow");
-			      break;
-			   }
-			case "friday":
-			  {
-			      System.out.println("Pink");
-			      break;
-			  }
-			case "saturday":
-			  {
-			      System.out.println("Black");
-			      break;
-			  }
-			case "sunday":
-			  {
-			      System.out.println("Orange");
-			      break;
-			  }  
-
-			default :
-			  {
-				 System.out.println("Invalid Day");
-			  }
+		    {
+		       System.out.println("White");
+		       break;
+		    }
+		   case "tuesday":
+		    {
+			System.out.println("Red");
+			 break;
+		    }
+		  case "wednesday":
+		   {
+		       System.out.println("Green");
+		       break;
+		   }
+		  case "thursday":
+		  {
+		      System.out.println("Yellow");
+		      break;
+		  }
+		 case "friday":
+		  {
+		     System.out.println("Pink");
+		     break;
+		  }
+		 case "saturday":
+		  {
+		      System.out.println("Black");
+		      break;
+		  }
+		case "sunday":
+		 {
+		      System.out.println("Orange");
+		      break;
+		 }  
+                default :
+		 {
+		      System.out.println("Invalid Day");
 		}
+	     }
 	}
 }
