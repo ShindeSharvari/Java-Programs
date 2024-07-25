@@ -23,19 +23,18 @@ class ArmstrongNumberNth
                   int digit = temp % 10;   // extract number
                   int pow = 1;
                   for (int i = 0; i < digitCount; i++)   // give power to extracted number
-		 {
+		   {
                       pow *= digit;
-                }
-                sum += pow;                           // sum after power 
-              }
+                   }
+                  sum += pow;                           // sum after power 
+               }
 
                if (sum == num)                       // If equals then armstrong and make count
-			{
+	       {
                   count++;
-               }
-                            
+               }             
                if (count == pos)                  // Check count and pos are same to display the nth number    
-			   {
+	       {
                    System.out.println("The " + pos + "th Armstrong number is: " + num);
                    break;
                }
