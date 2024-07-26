@@ -13,17 +13,17 @@ class DigitCheck
 	  int rem=0 ;
       
 	  while(num>0)
-		{
+	  {
            rem=num%10;
 		   if(rem==digit)
-			{
-			   System.out.println("Digit is present in number");
-			   break;
-			}
-			else if (num/10==0)
-			{
-				   System.out.println("Digit is not present in number");
-			}
+		   {
+		      System.out.println("Digit is present in number");
+		      break;
+		   }
+		  else if (num/10==0)
+		  {
+		    System.out.println("Digit is not present in number");
+		  }
 		   num=num/10;
 		}
 	}
