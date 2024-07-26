@@ -20,10 +20,10 @@ class DigitInNumberPrime
                            break;
 			}
 		    }
-			if(rem==divisor)                   
-			{
-				System.out.println(num+" contains a prime digit.");
-			} 
+		  if(rem==divisor)                   
+		  {
+		    System.out.println(num+" contains a prime digit.");
+		  } 
 		}
 	}
 }
