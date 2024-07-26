@@ -14,17 +14,17 @@ class DuckNumber
 		int rem=0;
 		while(num>0)
 		{
-			rem=num%10;
-			if(rem==0)
-			{
-				System.out.println("The entered number is a duck number");
-				break;
-			}
-			else if(num/10==0)  // reached end 
-			{
-               System.out.println("The entered number is not a duck number");
-			}
-			num=num/10;
+		  rem=num%10;
+		  if(rem==0)
+		  {
+		    System.out.println("The entered number is a duck number");
+		    break;
+		  }
+		 else if(num/10==0)  // reached end 
+		 {
+                    System.out.println("The entered number is not a duck number");
+		}
+		num=num/10;
 		}
 	}
 }
