@@ -24,11 +24,11 @@ class EvenOddCount
 			int rem=num%10;
 			if(rem%2==0)
 			{
-				evenCount++;
+			   evenCount++;
 			}
 			else
 			{
-				oddCount++;
+			   oddCount++;
 			}
 			num=num/10;
 		}
