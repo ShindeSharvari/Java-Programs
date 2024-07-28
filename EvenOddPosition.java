@@ -11,16 +11,16 @@ class EvenOddPosition
       
 	  while(num>0)
 		{
-           int rem=num%10;
+                   int rem=num%10;
 		   count++;
 		   if(count%2==0)
-			{
-			   evenSum=evenSum+rem;
-			}
-			else
-			{
-			  oddProduct=oddProduct*rem;
-			}
+		   {
+			evenSum=evenSum+rem;
+		   }
+		  else
+		  {
+			oddProduct=oddProduct*rem;
+		  }
 		   num=num/10;
 		}
 		System.out.println("The sum of even position numbers is : "+evenSum);
