@@ -17,6 +17,5 @@ class EvenOdd
     {
       System.out.println("The entered number "+num+" is odd number.");
     }
-
     }
 }
