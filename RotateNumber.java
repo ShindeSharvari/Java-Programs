@@ -1,37 +1,50 @@
-/* Rotate the number as per user entered no of times rotation.
+/*
 
-Enter the number to rotate : 1234
-Enter the number of rotations : 3
+Enter the number
+1234
 4123
-3412
-2341
 
 */
 
 import java.util.Scanner;
-class RotateNumber 
+class RotateNumber
 {
 	public static void main(String[] args) 
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number to rotate : ");
-		int num=sc.nextInt();
+		System.out.println("Enter the number");
+		int num = sc.nextInt();
 
-		System.out.print("Enter the number of rotations : ");
-		int no=sc.nextInt();
+        System.out.println(rotate(num));
+	}
 
-		for(int i=0;i<no;i++)
+	public static int rotate(int num)
+	{
+		int last = num%10;
+		num/=10;
+		int ans = last * power(10,count(num))+num;
+		return ans;
+
+    //  return(num%10)* power(10,count(num)-1)+num/10;
+	}
+    
+	public static int count(int num)
+	{
+		int ct = 0;
+		for( ;num!=0;num/=10)
 		{
-            int last=num%10;
-			num=num/10;
-			int pow=1;
-			for(int temp=num;temp!=0;temp/=10)
-			{
-				pow=pow*10;
-			}
-            int ans = last*pow+num;
-			System.out.println(ans);
-			num=ans;
+			ct++;
 		}
+		return ct;
+	}
+
+	public static int power(int base , int raise)
+	{
+		int pow = 1;
+		for(int i=0;i<raise;i++)
+		{
+			pow *=base;
+		}
+		return pow;
 	}
 }
